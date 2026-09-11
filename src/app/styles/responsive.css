@@ -1,0 +1,92 @@
+@media (min-width: 1600px) {
+  .welcome {
+    padding-top: 65px;
+  }
+  .setup-card {
+    padding: 36px 40px 24px;
+  }
+}
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 0 20px;
+  }
+  .site-header {
+    height: 82px;
+  }
+  .brand {
+    font-size: 33px;
+  }
+  .brand svg {
+    width: 33px;
+  }
+  .brand-tagline {
+    display: none;
+  }
+  .welcome {
+    padding: 30px 0 26px;
+  }
+  h1 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+  .intro {
+    font-size: 13px;
+  }
+  .setup-card {
+    padding: 23px 18px 18px;
+    border-radius: 14px;
+  }
+  .card-heading h2 {
+    font-size: 21px;
+  }
+  .card-heading p {
+    font-size: 11px;
+  }
+  .kind-options button {
+    padding: 13px 12px;
+    gap: 10px;
+  }
+  .name-options {
+    flex-wrap: wrap;
+  }
+  .name-options button {
+    flex-basis: 27%;
+  }
+  .name-options.mantra button {
+    flex-basis: 100%;
+  }
+  .mode-settings {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .mode-settings .option-group {
+    justify-content: flex-start;
+  }
+  .mode-settings button {
+    min-height: 44px;
+  }
+  .thought-quote {
+    padding: 0 14px;
+    font-size: 16px;
+  }
+  .footer-dots {
+    display: none;
+  }
+  .site-footer {
+    font-size: 11px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

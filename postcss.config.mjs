@@ -1,7 +1,3 @@
-const config = {
-  plugins: {
-    "@tailwindcss/postcss": {},
-  },
-};
-
+// Plain CSS needs no additional transforms.
+const config = { plugins: {} };
 export default config;

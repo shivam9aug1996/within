@@ -1,0 +1,179 @@
+:root {
+  --paper: #faf8f3;
+  --ink: #393c32;
+  --muted: #73756a;
+  --accent: #a8532e;
+  --line: #e8e5dc;
+  --soft: #f3f1e9;
+  --font-sans: Arial, "Nirmala UI", "Devanagari Sangam MN", sans-serif;
+  --font-nums: ui-sans-serif, system-ui, Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-variant-numeric: lining-nums tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+.orb-number,
+.begin-wait,
+.session-stats,
+.mode-settings .option-group,
+.history-details,
+.history-entry time,
+.resume-mode,
+.orb-caption {
+  font-family: var(--font-nums);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+button,
+input {
+  font: inherit;
+}
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button {
+  transition:
+    background-color 0.16s,
+    color 0.16s,
+    border-color 0.16s,
+    transform 0.16s;
+}
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #aa683d;
+  outline-offset: 4px;
+}
+svg {
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+.app-shell {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 64px;
+}
+.site-header {
+  height: 104px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  gap: 24px;
+}
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  letter-spacing: -1.6px;
+}
+.brand svg {
+  width: 40px;
+  height: 40px;
+  color: var(--accent);
+}
+.brand-dot {
+  color: var(--accent);
+}
+.brand-tagline {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-left: 14px;
+  border-left: 1px solid var(--line);
+  padding-left: 28px;
+}
+.language-button {
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  color: var(--ink);
+}
+.language-button:hover {
+  background: var(--soft);
+}
+.home-content {
+  max-width: 720px;
+  margin: auto;
+}
+.welcome {
+  text-align: center;
+  padding: 40px 0 28px;
+}
+.welcome-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 17px;
+  color: #b88d57;
+}
+.welcome-decoration svg {
+  width: 35px;
+  height: 35px;
+}
+.welcome-decoration span {
+  width: 43px;
+  height: 1px;
+  background: #e2d6be;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+h1 {
+  font-family: Georgia, "Nirmala UI", "Devanagari Sangam MN", serif;
+  font-size: 57px;
+  line-height: 1.16;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+h1 em {
+  font-weight: 400;
+  color: var(--accent);
+}
+.intro {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 16px;
+}

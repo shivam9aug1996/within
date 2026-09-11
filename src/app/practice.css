@@ -1,0 +1,259 @@
+.practice-screen,
+.completion {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 20px;
+  min-height: calc(100svh - 179px);
+}
+.app-shell.is-sanctum .main-nav {
+  border-bottom: 0;
+}
+.app-shell.is-sanctum .practice-screen {
+  min-height: calc(100svh - 56px);
+}
+.session-mantra {
+  font-family: "Devanagari Sangam MN", "Nirmala UI", Georgia, serif;
+  font-size: 46px;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.6;
+}
+.practice-focus {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 38px auto 24px;
+}
+.practice-focus .practice-orb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-shadow: none;
+}
+.mala-ring {
+  position: absolute;
+  inset: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  pointer-events: none;
+  overflow: visible;
+  stroke: none;
+}
+.mala-ring circle {
+  stroke: none;
+  fill: #ddd4c0;
+}
+.mala-ring circle.is-filled {
+  fill: var(--accent);
+}
+.practice-orb {
+  width: 280px;
+  height: 280px;
+  border: 1px solid #c8b897;
+  border-radius: 50%;
+  margin: 38px auto 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #f3efe4;
+  color: var(--accent);
+  position: relative;
+  font-size: 16px;
+  box-shadow:
+    0 0 0 12px #faf8f3,
+    0 0 0 13px #e8e2d2;
+}
+.practice-orb:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.practice-orb > span {
+  position: relative;
+  z-index: 1;
+}
+.orb-number {
+  font-family: var(--font-nums);
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.orb-caption {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.2;
+}
+.breath-orb .orb-number {
+  font-size: 30px;
+}
+.count-orb:not(:disabled):hover {
+  background: #ece4d3;
+}
+.count-orb:not(:disabled):active {
+  transform: scale(0.985);
+  background: #e9dec9;
+}
+.practice-instruction {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 430px;
+  margin: 32px auto 24px;
+  min-height: 50px;
+}
+.session-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.begin-wait {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.secondary-button {
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  padding: 10px 18px;
+  color: var(--ink);
+}
+.secondary-button:hover {
+  background: var(--soft);
+}
+.text-button {
+  display: block;
+  margin: 20px auto 0;
+  min-height: 44px;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 13px;
+}
+.leave-confirm {
+  max-width: 430px;
+  margin: 24px auto 0;
+}
+.leave-confirm p {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.leave-confirm-actions {
+  display: flex;
+  gap: 12px;
+}
+.leave-confirm-actions .secondary-button {
+  flex: 1;
+}
+.breathing-halo {
+  position: absolute !important;
+  inset: 12px;
+  border-radius: 50%;
+  background: #e1d8bd;
+  z-index: 0 !important;
+  animation: breathe var(--breath-duration) ease-in-out infinite;
+}
+.timer-orb .breathing-halo {
+  display: none;
+}
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(0.65);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+.completion-lotus {
+  width: 70px;
+  height: 70px;
+  color: var(--accent);
+  margin: 0 auto 25px;
+}
+.completion h1 {
+  font-size: 50px;
+}
+.session-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 38px 0;
+}
+.session-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.session-stats strong {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.session-stats span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.thought-quote {
+  max-width: 430px;
+  margin: 0 auto 32px;
+  font-family: Georgia, "Nirmala UI", "Devanagari Sangam MN", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #737363;
+}
+.completion > .primary-button {
+  margin: auto;
+  min-width: 230px;
+}
+@media (max-width: 700px) {
+  .practice-screen,
+  .completion {
+    padding: 45px 0;
+    min-height: calc(100svh - 157px);
+  }
+  .session-mantra {
+    font-size: 34px;
+  }
+  .practice-orb {
+    width: 240px;
+    height: 240px;
+  }
+  .practice-focus {
+    width: 240px;
+    height: 240px;
+    margin: 38px auto 24px;
+  }
+  .orb-number {
+    font-size: 52px;
+  }
+  .completion h1 {
+    font-size: 39px;
+  }
+  .session-controls {
+    gap: 8px;
+  }
+  .session-controls .primary-button {
+    padding: 12px 17px;
+  }
+  .secondary-button {
+    padding: 10px 12px;
+  }
+}
